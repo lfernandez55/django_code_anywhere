@@ -1,0 +1,10 @@
+<!-- {{employees.company__name}} -->
+
+{% block content %}
+    <h2>Employee content</h2>
+    <ul>
+        {% for ob in employees %}
+            <li>{{ ob.name }} {{ ob.company__name }} {{ ob.company__abbrev }} ss </li>
+        {% endfor %}
+    </ul>{{ ob.company__name }} 
+{% endblock %}

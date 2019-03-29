@@ -1,0 +1,11 @@
+{% load  widget_tweaks %}
+
+<h1>{{ foo.foo_text }}   form_tags</h1>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+{% render_field form.text rows="20" cols="20" title="Hello, world!" %}
+
+<!-- % render_field field class=field|input_class %} -->
+
+

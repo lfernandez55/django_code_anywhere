@@ -1,3 +1,7 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+
 {% if latest_question_list %}
     <ul>
     {% for question in latest_question_list %}
@@ -8,3 +12,21 @@
 {% else %}
     <p>No polls are available.</p>
 {% endif %}
+
+<a href="{% url 'polls:foolist' %}">Foos / in urls.py this resolves to polls/foolist  / loads FooListView in views.py // which loads the template foo_list.html</a>
+
+<br>
+
+<a href="1/foodetailview/"> Foo detail for foo pk1</a>
+
+<br>
+
+<a href="2/foodetailview/"> Foo detail for foo pk2</a>
+
+<br>
+
+<a href="baz2/"> Simple Raw SQL</a>
+
+<br>
+
+<a href="{% url 'polls:baz2_nickname' %}"> Simple Raw SQL</a>

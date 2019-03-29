@@ -1,0 +1,10 @@
+
+
+{% block content %}
+    <h2>Foo content</h2>
+    <ul>
+        {% for ob in object_list %}
+            <li>{{ ob.foo_text }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

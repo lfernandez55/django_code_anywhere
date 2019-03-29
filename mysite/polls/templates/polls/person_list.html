@@ -1,0 +1,12 @@
+
+            
+
+{% block content %}
+    <h2>User content (in person_list.html)</h2>
+    <ul>
+        {% for ob in object_list %}
+            <h1>|{{ ob }}|</h1>
+            <li>{{ ob.first_name_text }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
